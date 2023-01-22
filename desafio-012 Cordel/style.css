@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Averia";
+  src: url(fonts/AveriaSansLibre-Italic.ttf) format(truetype), url(fonts/AveriaSansLibre-Light.ttf) format(truetype), url(fonts/AveriaSansLibre-LightItalic.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Plump";
+  src: url(fonts/Plump.ttf) format(truetype);
+}
+
+* {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --color1: #000000;
+  --color2: #FFFFFF;
+  --font-Destaque: "Plump";
+  --font-Principal: "Averia";
+}
+
+/*--Cabeçalho--*/
+header {
+  min-width: 300px;
+  max-width: 1360px;
+  height: 195px;
+  background-color: var(--color1);
+}
+
+header h1 {
+  font-family: var(--font-Destaque);
+  font-size: 55px;
+  color: var(--color2);
+  padding-top: 68px;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+  color: var(--color2);
+}
+
+header a {
+  font-family: var(--font-Destaque);
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.link {
+  padding-top: 13px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*--Assunto_Principal--*/
+
+main {
+  min-width: 320px;
+  max-width: 1360px;
+}
+main p {
+  text-
+  text-align: left;
+  font-family: "Averia";
+}
+
+/*--config_img--*/
+#container {
+   background-image: url(imagens/background001.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: block;
+   position: relative;
+   height: 96vh;
+   padding: 10px;
+}
+
+#conteudo {
+   min-width: 300px;
+   max-width: 1360px;
+   background-size: 100% 100%;
+   position: absolute;
+   height: 200px;
+   width: 400px;
+   
+}
+
+/*--config_text--*/
+
+#conteudo p {
+  background-color: #00000033;
+  color: var(--color2);
+  line-height: 50px;
+  text-align: left;
+}
